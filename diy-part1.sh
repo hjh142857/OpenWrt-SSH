@@ -16,3 +16,9 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+mkdir package/diy
+mkdir package/kiddin9
+git clone https://github.com/kiddin9/kwrt-packages package/kiddin9
+mv package/kiddin9/autoshare-ksmbd package/diy/
+rm -rf package/kiddin9
