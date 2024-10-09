@@ -21,4 +21,4 @@ sed -i 's/OpenWrt/JDCloud/g' package/base-files/files/bin/config_generate
 
 # 修改去除无用的mini和oem分区
 sed -i "s/27328k/32448k/g" target/linux/ramips/image/mt7621.mk
-cat ../mt7621_jdcloud_re-sp-01b.dts > target/linux/ramips/dts/mt7621_jdcloud_re-sp-01b.dts
+curl https://raw.githubusercontent.com/hjh142857/OpenWrt-SSH/jdc1/mt7621_jdcloud_re-sp-01b.dts > target/linux/ramips/dts/mt7621_jdcloud_re-sp-01b.dts
