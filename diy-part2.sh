@@ -18,3 +18,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-mod/g' feeds/luci/collections/lu
 
 # Modify hostname
 sed -i 's/OpenWrt/YouKu-L1/g' package/base-files/files/bin/config_generate
+
+rm -rf package/feeds/luci/luci-app-serverchan/*
+git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush.git package/feeds/luci/luci-app-serverchan
