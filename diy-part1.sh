@@ -18,7 +18,13 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 mkdir package/diy
+
 mkdir package/kiddin9
 git clone https://github.com/kiddin9/kwrt-packages package/kiddin9
 mv package/kiddin9/autoshare-ksmbd package/diy/
 rm -rf package/kiddin9
+
+mkdir package/luci-app-unblockneteasemusic
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
+mkdir package/luci-app-wechatpush
+git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
