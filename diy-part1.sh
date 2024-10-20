@@ -28,3 +28,5 @@ mkdir package/luci-app-unblockneteasemusic
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 mkdir package/luci-app-wechatpush
 git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
+mkdir package/luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
